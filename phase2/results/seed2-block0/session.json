@@ -1,0 +1,9 @@
+{
+  "arms": [
+    "seed2",
+    "rust-draft",
+    "general-draft"
+  ],
+  "block": 0,
+  "gpu": "H100-03, NVIDIA H100 80GB HBM3\n"
+}

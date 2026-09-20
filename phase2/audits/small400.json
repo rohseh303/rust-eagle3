@@ -1,0 +1,195 @@
+{
+  "config": {
+    "model": {
+      "target_model_path": "/data/models/target",
+      "draft_model_config": "/data/models/general-draft/config.json",
+      "draft_checkpoint_path": null,
+      "vocab_mapping_path": "/data/baseline-vocab.pt",
+      "torch_dtype": "bfloat16"
+    },
+    "data": {
+      "hidden_states_path": "/data/features/train",
+      "eval_hidden_states_path": "/data/features/validation",
+      "max_length": 3072,
+      "chat_template": "qwen3-instruct",
+      "cache_dir": "/data/cache"
+    },
+    "training": {
+      "strategy": "eagle3",
+      "batch_size": 1,
+      "accumulation_steps": 8,
+      "learning_rate": 1e-05,
+      "num_epochs": 7,
+      "max_steps": 400,
+      "total_steps": 400,
+      "max_grad_norm": 0.5,
+      "ttt_length": 7,
+      "attention_backend": "sdpa",
+      "save_interval": 100,
+      "eval_interval": 100,
+      "log_interval": 5,
+      "seed": 20260918,
+      "resume_from": "/data/phase2/small400/training/small400-step200"
+    },
+    "tracking": {
+      "report_to": "none"
+    },
+    "run_id": "small400",
+    "output_dir": "/data/phase2/small400/training",
+    "deployment": {
+      "mode": "local_colocated",
+      "trainer": {
+        "nnodes": 1,
+        "nproc_per_node": 1
+      }
+    }
+  },
+  "stage_configs": {
+    "train-part0.json": {
+      "model": {
+        "target_model_path": "/data/models/target",
+        "draft_model_config": "/data/models/general-draft/config.json",
+        "draft_checkpoint_path": "/data/models/general-draft",
+        "vocab_mapping_path": "/data/baseline-vocab.pt",
+        "torch_dtype": "bfloat16"
+      },
+      "data": {
+        "hidden_states_path": "/data/features/train",
+        "eval_hidden_states_path": "/data/features/validation",
+        "max_length": 3072,
+        "chat_template": "qwen3-instruct",
+        "cache_dir": "/data/cache"
+      },
+      "training": {
+        "strategy": "eagle3",
+        "batch_size": 1,
+        "accumulation_steps": 8,
+        "learning_rate": 1e-05,
+        "num_epochs": 7,
+        "max_steps": 200,
+        "total_steps": 400,
+        "max_grad_norm": 0.5,
+        "ttt_length": 7,
+        "attention_backend": "sdpa",
+        "save_interval": 100,
+        "eval_interval": 100,
+        "log_interval": 5,
+        "seed": 20260918
+      },
+      "tracking": {
+        "report_to": "none"
+      },
+      "run_id": "small400",
+      "output_dir": "/data/phase2/small400/training",
+      "deployment": {
+        "mode": "local_colocated",
+        "trainer": {
+          "nnodes": 1,
+          "nproc_per_node": 1
+        }
+      }
+    },
+    "train-part1.json": {
+      "model": {
+        "target_model_path": "/data/models/target",
+        "draft_model_config": "/data/models/general-draft/config.json",
+        "draft_checkpoint_path": null,
+        "vocab_mapping_path": "/data/baseline-vocab.pt",
+        "torch_dtype": "bfloat16"
+      },
+      "data": {
+        "hidden_states_path": "/data/features/train",
+        "eval_hidden_states_path": "/data/features/validation",
+        "max_length": 3072,
+        "chat_template": "qwen3-instruct",
+        "cache_dir": "/data/cache"
+      },
+      "training": {
+        "strategy": "eagle3",
+        "batch_size": 1,
+        "accumulation_steps": 8,
+        "learning_rate": 1e-05,
+        "num_epochs": 7,
+        "max_steps": 400,
+        "total_steps": 400,
+        "max_grad_norm": 0.5,
+        "ttt_length": 7,
+        "attention_backend": "sdpa",
+        "save_interval": 100,
+        "eval_interval": 100,
+        "log_interval": 5,
+        "seed": 20260918,
+        "resume_from": "/data/phase2/small400/training/small400-step200"
+      },
+      "tracking": {
+        "report_to": "none"
+      },
+      "run_id": "small400",
+      "output_dir": "/data/phase2/small400/training",
+      "deployment": {
+        "mode": "local_colocated",
+        "trainer": {
+          "nnodes": 1,
+          "nproc_per_node": 1
+        }
+      }
+    }
+  },
+  "selected_checkpoint": "/data/phase2/small400/training/small400-step400",
+  "vocab_unchanged": {
+    "t2d": true,
+    "d2t": true
+  },
+  "metadata": {
+    "small400.best_meta.json": {
+      "run_id": "small400",
+      "step": 400,
+      "score": 1.6724095033651465,
+      "metric": "eval/simulated_acc_len",
+      "metrics": {
+        "eval/avg_loss": 1.6998258016109637,
+        "eval/avg_acc": 0.6677369637811457,
+        "eval/per_position_acc": [
+          0.6677369637811457,
+          0.6276008219881839,
+          0.6121885435396867,
+          0.6007577703570511,
+          0.5913177498073465,
+          0.5829052144875417,
+          0.577189827896224
+        ],
+        "eval/simulated_acc_len": 1.6724095033651465,
+        "eval/acceptance_rate_0": 0.811514394913249,
+        "eval/expected_acceptance_0": 0.811514394913249,
+        "eval/acceptance_rate_1": 0.763169044103871,
+        "eval/expected_acceptance_1": 0.763169044103871,
+        "eval/acceptance_rate_2": 0.7400770865811556,
+        "eval/expected_acceptance_2": 0.7400770865811556,
+        "eval/acceptance_rate_3": 0.7228673939769505,
+        "eval/expected_acceptance_3": 0.7228673939769505,
+        "eval/acceptance_rate_4": 0.7049404050422132,
+        "eval/expected_acceptance_4": 0.7049404050422132,
+        "eval/acceptance_rate_5": 0.6907457184115545,
+        "eval/expected_acceptance_5": 0.6907457184115545,
+        "eval/acceptance_rate_6": 0.6757058761352902,
+        "eval/expected_acceptance_6": 0.6757058761352902,
+        "eval/ploss_0": 0.29796532822382465,
+        "eval/ploss_1": 0.4042512772990546,
+        "eval/ploss_2": 0.4560633351672536,
+        "eval/ploss_3": 0.48954851020070245,
+        "eval/ploss_4": 0.5183449537835911,
+        "eval/ploss_5": 0.5396882860802509,
+        "eval/ploss_6": 0.5598866955649278
+      }
+    }
+  },
+  "exposure_by_optimizer_step": {
+    "400": {
+      "example_exposures": 3200,
+      "unique_examples_seen": 512,
+      "teacher_prompt_token_exposures": 632783,
+      "teacher_completion_token_exposures": 678152,
+      "note": "Reconstructed from pinned SpecForge sampler, not an optimizer FLOP count; teacher usage tokens are not identical to the multi-step loss-mask count."
+    }
+  }
+}

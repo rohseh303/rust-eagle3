@@ -1,0 +1,9 @@
+{
+  "arms": [
+    "mixed400",
+    "scale400",
+    "general-draft"
+  ],
+  "block": 0,
+  "gpu": "H100-07, NVIDIA H100 80GB HBM3\n"
+}

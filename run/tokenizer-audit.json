@@ -1,0 +1,18 @@
+{
+  "default_return_type": "BatchEncoding",
+  "corrected_return_type": "list",
+  "splits": {
+    "train": {
+      "examples": 512,
+      "max_prompt_tokens": 976,
+      "would_exceed_original_prefilter_budget": 0,
+      "max_rendered_tokens": 1743
+    },
+    "validation": {
+      "examples": 64,
+      "max_prompt_tokens": 471,
+      "would_exceed_original_prefilter_budget": 0,
+      "max_rendered_tokens": 1250
+    }
+  }
+}

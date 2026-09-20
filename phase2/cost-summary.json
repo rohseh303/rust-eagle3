@@ -1,0 +1,9 @@
+{
+  "provider_reported_usage_usd_before_credits": 17.2706449,
+  "conservative_ledger_usd": 41.878509921385124,
+  "cumulative_cap_usd": 60,
+  "final_app_charge_included": true,
+  "usage_is_final_invoice": false,
+  "active_containers_at_closeout": 0,
+  "note": "Completed experiment usage, including pilot and failed attempts. Retained storage is separate; no account-level billing or credentials are distributed."
+}

@@ -1,0 +1,6 @@
+{
+  "original_target_prompts": 64,
+  "replication_outputs_checked": 384,
+  "mismatches": [],
+  "note": "Cross-check only the 32 prior Rust and 32 Python prompts. Fresh Rust/general diagnostics had no target-only pilot reference."
+}

@@ -1,0 +1,10 @@
+{
+  "examples": 2048,
+  "categories": {
+    "code_generation": 2041,
+    "code_completion": 7
+  },
+  "max_prompt_tokens": 1109,
+  "prompt_tokens": 406405,
+  "sequence_budget_failures": 0
+}

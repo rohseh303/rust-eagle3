@@ -1,0 +1,195 @@
+{
+  "config": {
+    "model": {
+      "target_model_path": "/data/models/target",
+      "draft_model_config": "/data/models/general-draft/config.json",
+      "draft_checkpoint_path": null,
+      "vocab_mapping_path": "/data/baseline-vocab.pt",
+      "torch_dtype": "bfloat16"
+    },
+    "data": {
+      "hidden_states_path": "/data/phase2/features/rust2048",
+      "eval_hidden_states_path": "/data/features/validation",
+      "max_length": 3072,
+      "chat_template": "qwen3-instruct",
+      "cache_dir": "/data/cache"
+    },
+    "training": {
+      "strategy": "eagle3",
+      "batch_size": 1,
+      "accumulation_steps": 8,
+      "learning_rate": 1e-05,
+      "num_epochs": 3,
+      "max_steps": 400,
+      "total_steps": 400,
+      "max_grad_norm": 0.5,
+      "ttt_length": 7,
+      "attention_backend": "sdpa",
+      "save_interval": 100,
+      "eval_interval": 100,
+      "log_interval": 5,
+      "seed": 20260918,
+      "resume_from": "/data/phase2/scale400/training/scale400-step200"
+    },
+    "tracking": {
+      "report_to": "none"
+    },
+    "run_id": "scale400",
+    "output_dir": "/data/phase2/scale400/training",
+    "deployment": {
+      "mode": "local_colocated",
+      "trainer": {
+        "nnodes": 1,
+        "nproc_per_node": 1
+      }
+    }
+  },
+  "stage_configs": {
+    "train-part0.json": {
+      "model": {
+        "target_model_path": "/data/models/target",
+        "draft_model_config": "/data/models/general-draft/config.json",
+        "draft_checkpoint_path": "/data/models/general-draft",
+        "vocab_mapping_path": "/data/baseline-vocab.pt",
+        "torch_dtype": "bfloat16"
+      },
+      "data": {
+        "hidden_states_path": "/data/phase2/features/rust2048",
+        "eval_hidden_states_path": "/data/features/validation",
+        "max_length": 3072,
+        "chat_template": "qwen3-instruct",
+        "cache_dir": "/data/cache"
+      },
+      "training": {
+        "strategy": "eagle3",
+        "batch_size": 1,
+        "accumulation_steps": 8,
+        "learning_rate": 1e-05,
+        "num_epochs": 3,
+        "max_steps": 200,
+        "total_steps": 400,
+        "max_grad_norm": 0.5,
+        "ttt_length": 7,
+        "attention_backend": "sdpa",
+        "save_interval": 100,
+        "eval_interval": 100,
+        "log_interval": 5,
+        "seed": 20260918
+      },
+      "tracking": {
+        "report_to": "none"
+      },
+      "run_id": "scale400",
+      "output_dir": "/data/phase2/scale400/training",
+      "deployment": {
+        "mode": "local_colocated",
+        "trainer": {
+          "nnodes": 1,
+          "nproc_per_node": 1
+        }
+      }
+    },
+    "train-part1.json": {
+      "model": {
+        "target_model_path": "/data/models/target",
+        "draft_model_config": "/data/models/general-draft/config.json",
+        "draft_checkpoint_path": null,
+        "vocab_mapping_path": "/data/baseline-vocab.pt",
+        "torch_dtype": "bfloat16"
+      },
+      "data": {
+        "hidden_states_path": "/data/phase2/features/rust2048",
+        "eval_hidden_states_path": "/data/features/validation",
+        "max_length": 3072,
+        "chat_template": "qwen3-instruct",
+        "cache_dir": "/data/cache"
+      },
+      "training": {
+        "strategy": "eagle3",
+        "batch_size": 1,
+        "accumulation_steps": 8,
+        "learning_rate": 1e-05,
+        "num_epochs": 3,
+        "max_steps": 400,
+        "total_steps": 400,
+        "max_grad_norm": 0.5,
+        "ttt_length": 7,
+        "attention_backend": "sdpa",
+        "save_interval": 100,
+        "eval_interval": 100,
+        "log_interval": 5,
+        "seed": 20260918,
+        "resume_from": "/data/phase2/scale400/training/scale400-step200"
+      },
+      "tracking": {
+        "report_to": "none"
+      },
+      "run_id": "scale400",
+      "output_dir": "/data/phase2/scale400/training",
+      "deployment": {
+        "mode": "local_colocated",
+        "trainer": {
+          "nnodes": 1,
+          "nproc_per_node": 1
+        }
+      }
+    }
+  },
+  "selected_checkpoint": "/data/phase2/scale400/training/scale400-step400",
+  "vocab_unchanged": {
+    "t2d": true,
+    "d2t": true
+  },
+  "metadata": {
+    "scale400.best_meta.json": {
+      "run_id": "scale400",
+      "step": 400,
+      "score": 1.7521456389176915,
+      "metric": "eval/simulated_acc_len",
+      "metrics": {
+        "eval/avg_loss": 1.4781369368000246,
+        "eval/avg_acc": 0.6748009247367069,
+        "eval/per_position_acc": [
+          0.6748009247367069,
+          0.6430131004366813,
+          0.6284998715643463,
+          0.6195735936295915,
+          0.6093629591574621,
+          0.6015926021063447,
+          0.5951708194194708
+        ],
+        "eval/simulated_acc_len": 1.7521456389176915,
+        "eval/acceptance_rate_0": 0.8141816381519831,
+        "eval/expected_acceptance_0": 0.8141816381519831,
+        "eval/acceptance_rate_1": 0.7707396202836578,
+        "eval/expected_acceptance_1": 0.7707396202836578,
+        "eval/acceptance_rate_2": 0.7483328930018995,
+        "eval/expected_acceptance_2": 0.7483328930018995,
+        "eval/acceptance_rate_3": 0.7318870156568605,
+        "eval/expected_acceptance_3": 0.7318870156568605,
+        "eval/acceptance_rate_4": 0.7144450327762674,
+        "eval/expected_acceptance_4": 0.7144450327762674,
+        "eval/acceptance_rate_5": 0.6999250484435033,
+        "eval/expected_acceptance_5": 0.6999250484435033,
+        "eval/acceptance_rate_6": 0.6832295400079665,
+        "eval/expected_acceptance_6": 0.6832295400079665,
+        "eval/ploss_0": 0.2683902077181077,
+        "eval/ploss_1": 0.35082709819802754,
+        "eval/ploss_2": 0.39302276190796703,
+        "eval/ploss_3": 0.4190825729559078,
+        "eval/ploss_4": 0.4444581863091497,
+        "eval/ploss_5": 0.466257758763617,
+        "eval/ploss_6": 0.48884113011968844
+      }
+    }
+  },
+  "exposure_by_optimizer_step": {
+    "400": {
+      "example_exposures": 3200,
+      "unique_examples_seen": 2048,
+      "teacher_prompt_token_exposures": 635209,
+      "teacher_completion_token_exposures": 683244,
+      "note": "Reconstructed from pinned SpecForge sampler, not an optimizer FLOP count; teacher usage tokens are not identical to the multi-step loss-mask count."
+    }
+  }
+}

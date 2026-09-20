@@ -1,0 +1,19 @@
+[
+  {
+    "requests": 120,
+    "successes": 120,
+    "failures": 0,
+    "truncated": 1,
+    "wall_s": 67.61373275,
+    "output_tokens_per_s": 288.06278263050046,
+    "median_latency_s": 0.47446994899996753,
+    "p95_latency_s": 1.423194530150041,
+    "median_ttft_s": 0.023801333999983854,
+    "p95_ttft_s": 0.025396983199954093,
+    "median_tpot_s": 0.0033728676066989817,
+    "acceptance_rate": null,
+    "accepted_draft_tokens": null,
+    "proposed_draft_tokens": null,
+    "acceptance_note": "Ratio of summed per-request accepted/proposed draft counters when available; otherwise unavailable. Bonus tokens excluded."
+  }
+]

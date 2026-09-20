@@ -1,0 +1,14 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+*.safetensors
+*.bin
+*.pt
+*.tar
+*.zip
+.env
+.env.*
+.DS_Store
+run/budget.json
+run/budget.lock

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this experiment, cite the report and the upstream EAGLE-3, Qwen, SGLang, SpecForge, draft, and dataset sources."
+title: "Making an EAGLE-3 draft faster at Rust"
+authors:
+  - family-names: "Sehgal"
+    given-names: "Rohan"
+type: software
+version: 0.1.0
+abstract: "A controlled adaptation and serving study of an existing EAGLE-3 draft for frozen Qwen3-8B, including replication, matched-update data scaling, and mixed-data trade-offs."

@@ -1,0 +1,18 @@
+{
+  "url": "http://127.0.0.1:30001",
+  "model": "rust-target",
+  "input": "/opt/rust-draft/data/humaneval-python.jsonl",
+  "output": "/data/final-results-v2/target-humaneval-python-c1-1789794451138570185",
+  "arm": "target",
+  "concurrency": 1,
+  "repeats": 3,
+  "limit": 32,
+  "max_tokens": 1024,
+  "input_sha256": "b38906805099b07fbcc9bf5d7ea6022f2abd3eb36c1ba204ccfc4348d472001b",
+  "measurement": "closed-loop HTTP streaming; TTFT is first non-empty content event; natural EOS",
+  "sampling": {
+    "temperature": 0,
+    "enable_thinking": false
+  },
+  "required_server_settings": "prefix cache disabled; fixed target revision, precision, GPU, scheduler settings"
+}

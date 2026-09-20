@@ -1,0 +1,18 @@
+{
+  "url": "http://127.0.0.1:30002",
+  "model": "rust-target",
+  "input": "/opt/rust-draft/data/heldout.jsonl",
+  "output": "/data/final-results-v2/rust-draft-heldout-c16-1789794784541386015",
+  "arm": "rust-draft",
+  "concurrency": 16,
+  "repeats": 3,
+  "limit": 32,
+  "max_tokens": 1024,
+  "input_sha256": "827a47f7e4aacfb6af3ba5c00190c4c2b11a363a1e3a8ffe1b14b949c08eba31",
+  "measurement": "closed-loop HTTP streaming; TTFT is first non-empty content event; natural EOS",
+  "sampling": {
+    "temperature": 0,
+    "enable_thinking": false
+  },
+  "required_server_settings": "prefix cache disabled; fixed target revision, precision, GPU, scheduler settings"
+}

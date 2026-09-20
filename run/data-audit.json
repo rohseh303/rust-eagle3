@@ -1,0 +1,18 @@
+{
+  "train": {
+    "examples": 512,
+    "failures": 0,
+    "completion_tokens": 108939,
+    "prompt_tokens": 101284,
+    "capped": 5,
+    "median_completion_tokens": 171.0
+  },
+  "validation": {
+    "examples": 64,
+    "failures": 0,
+    "completion_tokens": 15575,
+    "prompt_tokens": 12261,
+    "capped": 2,
+    "median_completion_tokens": 193.5
+  }
+}

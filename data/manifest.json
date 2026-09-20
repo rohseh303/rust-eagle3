@@ -1,0 +1,65 @@
+{
+  "sources": {
+    "target": {
+      "repo": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+    },
+    "baseline_draft": {
+      "repo": "Tengyunw/qwen3_8b_eagle3",
+      "revision": "2a1059d51f622b8cad7d7d72840153ffea5488a0"
+    },
+    "training_data": {
+      "repo": "Fortytwo-Network/Strandset-Rust-v1",
+      "revision": "0a8d223302712a2b34a6ad4ce1fd679031894b3d",
+      "file": "data/train-00000-of-00001.parquet"
+    },
+    "evaluation_data": {
+      "repo": "bigcode/humanevalpack",
+      "revision": "9a41762f73a8cb23bb5811b73d5aab164efcf378"
+    },
+    "specforge": {
+      "repo": "https://github.com/sgl-project/SpecForge.git",
+      "revision": "ed64d275bac8a48e126adb2827368603566a3029"
+    },
+    "sglang": "0.5.18",
+    "seed": 20260918
+  },
+  "filter_counts": {
+    "length_filter": 24415,
+    "benchmark_overlap": 940
+  },
+  "eligible_counts": {
+    "train": 4943,
+    "validation": 830,
+    "heldout": 640
+  },
+  "selected_counts": {
+    "train": 512,
+    "validation": 64,
+    "heldout": 128
+  },
+  "selected_crates": {
+    "train": 341,
+    "validation": 44,
+    "heldout": 74
+  },
+  "source_sha256": {
+    "strand-train.parquet": "bf64af8726ea16d4ee940f158e2757596437ad6008c72ed8088c1c91d0d7b525",
+    "humaneval-rust.parquet": "02570ed6a11d8801d26a9aae0db87cdc0fc6f4a7eb68adb3a9e37fb4f752da57",
+    "humaneval-python.parquet": "ed5f15d789156e21222bfcd556c425a39042355c84ae1e8b058abd6a3d7f8075"
+  },
+  "data_sha256": {
+    "train.jsonl": "597d48599d2b47a91a030e288364f57306aa6903e8fde33e47bd309d96e8275c",
+    "humaneval-rust.jsonl": "df0786b611ea1049efb848bd47130b62fe6084c295f9d079bba6a615416524ad",
+    "heldout.jsonl": "827a47f7e4aacfb6af3ba5c00190c4c2b11a363a1e3a8ffe1b14b949c08eba31",
+    "validation.jsonl": "04e5c1042839d7835e19adc9e4dae1cc9d210e14a840f39fc009290d2c45ec9c",
+    "humaneval-python.jsonl": "b38906805099b07fbcc9bf5d7ea6022f2abd3eb36c1ba204ccfc4348d472001b"
+  },
+  "status": "Prompts only; target responses have not been generated.",
+  "limitations": [
+    "Synthetic source data; provider quality claims not independently reproduced.",
+    "Crate-disjoint splits; exact dedup and benchmark spec/name exclusions only.",
+    "No guarantee against semantic or target pretraining contamination.",
+    "Long-output selection uses source answer length, not observed target output length."
+  ]
+}

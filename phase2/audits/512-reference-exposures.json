@@ -1,0 +1,16 @@
+{
+  "20260918": {
+    "example_exposures": 800,
+    "unique_examples_seen": 512,
+    "teacher_prompt_token_exposures": 157750,
+    "teacher_completion_token_exposures": 167427,
+    "note": "Reconstructed from pinned SpecForge sampler, not an optimizer FLOP count; teacher usage tokens are not identical to the multi-step loss-mask count."
+  },
+  "20260919": {
+    "example_exposures": 800,
+    "unique_examples_seen": 512,
+    "teacher_prompt_token_exposures": 159317,
+    "teacher_completion_token_exposures": 167736,
+    "note": "Reconstructed from pinned SpecForge sampler, not an optimizer FLOP count; teacher usage tokens are not identical to the multi-step loss-mask count."
+  }
+}

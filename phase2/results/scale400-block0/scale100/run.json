@@ -1,0 +1,18 @@
+{
+  "url": "http://127.0.0.1:30101",
+  "model": "rust-target",
+  "input": "/opt/rust-draft/phase2/data/evaluation.jsonl",
+  "output": "/data/phase2/results/scale400-block0/scale100",
+  "arm": "scale100",
+  "concurrency": 1,
+  "repeats": 1,
+  "limit": null,
+  "max_tokens": 1024,
+  "input_sha256": "4e5539217c29ed817f4ef194cbda4fd3f782016b346835d882f96a400def0b8c",
+  "measurement": "closed-loop HTTP streaming; TTFT is first non-empty content event; natural EOS",
+  "sampling": {
+    "temperature": 0,
+    "enable_thinking": false
+  },
+  "required_server_settings": "prefix cache disabled; fixed target revision, precision, GPU, scheduler settings"
+}

@@ -1,0 +1,8 @@
+{
+  "new_examples": 1536,
+  "failures": 0,
+  "prompt_tokens": 305121,
+  "answer_tokens": 329912,
+  "median_answer_tokens": 172.0,
+  "capped": 23
+}

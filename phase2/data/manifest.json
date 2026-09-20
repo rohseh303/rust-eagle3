@@ -1,0 +1,13 @@
+{
+  "count": 120,
+  "cohorts": {
+    "rust_seen": 32,
+    "rust_fresh": 32,
+    "python": 32,
+    "prose": 8,
+    "reasoning": 8,
+    "tool_calls": 8
+  },
+  "sha256": "4e5539217c29ed817f4ef194cbda4fd3f782016b346835d882f96a400def0b8c",
+  "note": "Frozen before phase 2 outputs; diagnostic controls are small and not capability benchmarks."
+}

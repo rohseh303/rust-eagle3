@@ -1,0 +1,10 @@
+# Preserve evidence bytes and upstream formatting; do not normalize recorded files.
+data/** -text -whitespace
+phase2/** -text -whitespace
+run/** -text -whitespace
+models/** -text
+configs/** -text
+licenses/** -text -whitespace
+*.svg -text -whitespace
+# Patch context intentionally contains source whitespace.
+patches/** -text -whitespace

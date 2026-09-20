@@ -1,0 +1,848 @@
+{
+  "completeness_errors": [],
+  "case_output_agreement": {
+    "heldout-c1": {
+      "prompts": 32,
+      "all_nine_outputs_identical": 32,
+      "repeatable_prompts_by_arm": {
+        "target": 32,
+        "general-draft": 32,
+        "rust-draft": 32
+      }
+    },
+    "heldout-c16": {
+      "prompts": 32,
+      "all_nine_outputs_identical": 17,
+      "repeatable_prompts_by_arm": {
+        "target": 23,
+        "general-draft": 24,
+        "rust-draft": 24
+      }
+    },
+    "heldout-c4": {
+      "prompts": 32,
+      "all_nine_outputs_identical": 18,
+      "repeatable_prompts_by_arm": {
+        "target": 23,
+        "general-draft": 19,
+        "rust-draft": 24
+      }
+    },
+    "humaneval-python-c1": {
+      "prompts": 32,
+      "all_nine_outputs_identical": 32,
+      "repeatable_prompts_by_arm": {
+        "target": 32,
+        "general-draft": 32,
+        "rust-draft": 32
+      }
+    }
+  },
+  "disagreements": [
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-88ede464b7efdb62530e",
+      "distinct_outputs_by_arm": {
+        "target": 1,
+        "general-draft": 1,
+        "rust-draft": 1
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          293,
+          293,
+          293
+        ],
+        "general-draft": [
+          251,
+          251,
+          251
+        ],
+        "rust-draft": [
+          251,
+          251,
+          251
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-0354085854cd13df89cf",
+      "distinct_outputs_by_arm": {
+        "target": 1,
+        "general-draft": 1,
+        "rust-draft": 1
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          222,
+          222,
+          222
+        ],
+        "general-draft": [
+          222,
+          222,
+          222
+        ],
+        "rust-draft": [
+          222,
+          222,
+          222
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-8d61f375bd72fc20522d",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 2,
+        "rust-draft": 1
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          914,
+          920,
+          914
+        ],
+        "general-draft": [
+          810,
+          783,
+          783
+        ],
+        "rust-draft": [
+          783,
+          783,
+          783
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-4065801867200d988658",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 2,
+        "rust-draft": 2
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          181,
+          181,
+          181
+        ],
+        "general-draft": [
+          203,
+          203,
+          194
+        ],
+        "rust-draft": [
+          203,
+          203,
+          194
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-948c5f4d4c19076c8764",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 2,
+        "rust-draft": 2
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          728,
+          728,
+          726
+        ],
+        "general-draft": [
+          728,
+          698,
+          698
+        ],
+        "rust-draft": [
+          698,
+          728,
+          698
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-e182c88a4c1721f68cd3",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 1,
+        "rust-draft": 1
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          296,
+          323,
+          323
+        ],
+        "general-draft": [
+          323,
+          323,
+          323
+        ],
+        "rust-draft": [
+          323,
+          323,
+          323
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-be509b9a2fc74d9865fa",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 2,
+        "rust-draft": 2
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          164,
+          164,
+          117
+        ],
+        "general-draft": [
+          170,
+          168,
+          168
+        ],
+        "rust-draft": [
+          170,
+          168,
+          168
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-720694a9edf6a149bf66",
+      "distinct_outputs_by_arm": {
+        "target": 1,
+        "general-draft": 1,
+        "rust-draft": 1
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          134,
+          134,
+          134
+        ],
+        "general-draft": [
+          230,
+          230,
+          230
+        ],
+        "rust-draft": [
+          230,
+          230,
+          230
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-ad994e9a30854a400c88",
+      "distinct_outputs_by_arm": {
+        "target": 1,
+        "general-draft": 2,
+        "rust-draft": 2
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          238,
+          238,
+          238
+        ],
+        "general-draft": [
+          238,
+          146,
+          238
+        ],
+        "rust-draft": [
+          238,
+          146,
+          238
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-dce4b9444c438c18a9d2",
+      "distinct_outputs_by_arm": {
+        "target": 1,
+        "general-draft": 1,
+        "rust-draft": 1
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          222,
+          222,
+          222
+        ],
+        "general-draft": [
+          427,
+          427,
+          427
+        ],
+        "rust-draft": [
+          427,
+          427,
+          427
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-83dd5daf9091da059274",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 2,
+        "rust-draft": 2
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          183,
+          183,
+          138
+        ],
+        "general-draft": [
+          183,
+          183,
+          138
+        ],
+        "rust-draft": [
+          183,
+          183,
+          138
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-5a5072d35a284eae5deb",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 2,
+        "rust-draft": 2
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          160,
+          150,
+          160
+        ],
+        "general-draft": [
+          160,
+          150,
+          160
+        ],
+        "rust-draft": [
+          160,
+          150,
+          160
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-f7de3b0e9de5b39c19d2",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 2,
+        "rust-draft": 3
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          246,
+          246,
+          246
+        ],
+        "general-draft": [
+          246,
+          248,
+          246
+        ],
+        "rust-draft": [
+          246,
+          248,
+          248
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-4fa31daddd2a75201795",
+      "distinct_outputs_by_arm": {
+        "target": 1,
+        "general-draft": 1,
+        "rust-draft": 2
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          314,
+          314,
+          314
+        ],
+        "general-draft": [
+          429,
+          429,
+          429
+        ],
+        "rust-draft": [
+          485,
+          485,
+          429
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 16,
+      "id": "strand-594e1780a4e653e13820",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 1,
+        "rust-draft": 1
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          188,
+          185,
+          185
+        ],
+        "general-draft": [
+          188,
+          188,
+          188
+        ],
+        "rust-draft": [
+          188,
+          188,
+          188
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 4,
+      "id": "strand-f79374d8a1290f44162f",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 3,
+        "rust-draft": 1
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          186,
+          186,
+          176
+        ],
+        "general-draft": [
+          186,
+          186,
+          176
+        ],
+        "rust-draft": [
+          186,
+          186,
+          186
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 4,
+      "id": "strand-8d61f375bd72fc20522d",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 2,
+        "rust-draft": 2
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          908,
+          834,
+          834
+        ],
+        "general-draft": [
+          920,
+          834,
+          834
+        ],
+        "rust-draft": [
+          914,
+          834,
+          834
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 4,
+      "id": "strand-64951efa70c99907a379",
+      "distinct_outputs_by_arm": {
+        "target": 1,
+        "general-draft": 2,
+        "rust-draft": 1
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          385,
+          385,
+          385
+        ],
+        "general-draft": [
+          385,
+          387,
+          385
+        ],
+        "rust-draft": [
+          385,
+          385,
+          385
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 4,
+      "id": "strand-4065801867200d988658",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 2,
+        "rust-draft": 2
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          194,
+          181,
+          181
+        ],
+        "general-draft": [
+          181,
+          181,
+          213
+        ],
+        "rust-draft": [
+          181,
+          181,
+          181
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 4,
+      "id": "strand-948c5f4d4c19076c8764",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 3,
+        "rust-draft": 3
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          728,
+          698,
+          728
+        ],
+        "general-draft": [
+          712,
+          728,
+          710
+        ],
+        "rust-draft": [
+          728,
+          698,
+          597
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 4,
+      "id": "strand-e182c88a4c1721f68cd3",
+      "distinct_outputs_by_arm": {
+        "target": 1,
+        "general-draft": 2,
+        "rust-draft": 1
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          323,
+          323,
+          323
+        ],
+        "general-draft": [
+          323,
+          296,
+          323
+        ],
+        "rust-draft": [
+          323,
+          323,
+          323
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 4,
+      "id": "strand-be509b9a2fc74d9865fa",
+      "distinct_outputs_by_arm": {
+        "target": 1,
+        "general-draft": 2,
+        "rust-draft": 1
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          117,
+          117,
+          117
+        ],
+        "general-draft": [
+          117,
+          117,
+          164
+        ],
+        "rust-draft": [
+          117,
+          117,
+          117
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 4,
+      "id": "strand-720694a9edf6a149bf66",
+      "distinct_outputs_by_arm": {
+        "target": 3,
+        "general-draft": 2,
+        "rust-draft": 3
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          230,
+          134,
+          113
+        ],
+        "general-draft": [
+          237,
+          237,
+          113
+        ],
+        "rust-draft": [
+          237,
+          230,
+          113
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 4,
+      "id": "strand-9473c050e3826abebc62",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 1,
+        "rust-draft": 1
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          101,
+          101,
+          101
+        ],
+        "general-draft": [
+          101,
+          101,
+          101
+        ],
+        "rust-draft": [
+          101,
+          101,
+          101
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 4,
+      "id": "strand-83dd5daf9091da059274",
+      "distinct_outputs_by_arm": {
+        "target": 1,
+        "general-draft": 2,
+        "rust-draft": 1
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          138,
+          138,
+          138
+        ],
+        "general-draft": [
+          183,
+          138,
+          138
+        ],
+        "rust-draft": [
+          138,
+          138,
+          138
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 4,
+      "id": "strand-5a5072d35a284eae5deb",
+      "distinct_outputs_by_arm": {
+        "target": 1,
+        "general-draft": 2,
+        "rust-draft": 2
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          160,
+          160,
+          160
+        ],
+        "general-draft": [
+          150,
+          160,
+          160
+        ],
+        "rust-draft": [
+          150,
+          160,
+          160
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 4,
+      "id": "strand-f7de3b0e9de5b39c19d2",
+      "distinct_outputs_by_arm": {
+        "target": 3,
+        "general-draft": 2,
+        "rust-draft": 2
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          248,
+          243,
+          246
+        ],
+        "general-draft": [
+          246,
+          243,
+          243
+        ],
+        "rust-draft": [
+          248,
+          243,
+          243
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 4,
+      "id": "strand-4fa31daddd2a75201795",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 3,
+        "rust-draft": 3
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          308,
+          416,
+          308
+        ],
+        "general-draft": [
+          314,
+          485,
+          416
+        ],
+        "rust-draft": [
+          314,
+          313,
+          416
+        ]
+      }
+    },
+    {
+      "suite": "heldout",
+      "concurrency": 4,
+      "id": "strand-594e1780a4e653e13820",
+      "distinct_outputs_by_arm": {
+        "target": 2,
+        "general-draft": 3,
+        "rust-draft": 2
+      },
+      "completion_tokens_by_arm": {
+        "target": [
+          188,
+          185,
+          188
+        ],
+        "general-draft": [
+          190,
+          185,
+          188
+        ],
+        "rust-draft": [
+          188,
+          185,
+          188
+        ]
+      }
+    }
+  ],
+  "acceptance_probes": {
+    "general-draft": {
+      "requests": 16,
+      "spec_num_correct_drafts": 2718,
+      "spec_num_proposed_drafts": 6528,
+      "spec_verify_ct": 2176,
+      "acceptance_rate": 0.4163602941176471,
+      "completion_tokens": 4876
+    },
+    "rust-draft": {
+      "requests": 16,
+      "spec_num_correct_drafts": 2895,
+      "spec_num_proposed_drafts": 5976,
+      "spec_verify_ct": 1992,
+      "acceptance_rate": 0.48443775100401604,
+      "completion_tokens": 4876
+    }
+  },
+  "probe_output_agreement": {
+    "paired_prompts": 16,
+    "identical_text": 16
+  }
+}

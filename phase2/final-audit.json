@@ -1,0 +1,382 @@
+{
+  "evaluation_sha256": "4e5539217c29ed817f4ef194cbda4fd3f782016b346835d882f96a400def0b8c",
+  "studies": [
+    {
+      "study": "replication",
+      "timed_requests": 720,
+      "native_requests": 0,
+      "failed_requests": [],
+      "capped_requests": [
+        [
+          0,
+          "seed2",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          0,
+          "rust-draft",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          0,
+          "general-draft",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          1,
+          "general-draft",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          1,
+          "rust-draft",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          1,
+          "seed2",
+          "strand-79b49549d834719fa4ad"
+        ]
+      ],
+      "fresh_rust_capped_requests": [],
+      "sessions": [
+        {
+          "arms": [
+            "seed2",
+            "rust-draft",
+            "general-draft"
+          ],
+          "block": 0,
+          "gpu": "H100-03, NVIDIA H100 80GB HBM3\n"
+        },
+        {
+          "arms": [
+            "general-draft",
+            "rust-draft",
+            "seed2"
+          ],
+          "block": 1,
+          "gpu": "H100-04, NVIDIA H100 80GB HBM3\n"
+        }
+      ]
+    },
+    {
+      "study": "scale",
+      "timed_requests": 960,
+      "native_requests": 192,
+      "failed_requests": [],
+      "capped_requests": [
+        [
+          0,
+          "scale400",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          0,
+          "scale100",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          0,
+          "rust-draft",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          0,
+          "general-draft",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          1,
+          "general-draft",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          1,
+          "rust-draft",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          1,
+          "scale100",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          1,
+          "scale400",
+          "strand-79b49549d834719fa4ad"
+        ]
+      ],
+      "fresh_rust_capped_requests": [],
+      "sessions": [
+        {
+          "arms": [
+            "scale400",
+            "scale100",
+            "rust-draft",
+            "general-draft"
+          ],
+          "block": 0,
+          "gpu": "H100-05, NVIDIA H100 80GB HBM3\n"
+        },
+        {
+          "arms": [
+            "general-draft",
+            "rust-draft",
+            "scale100",
+            "scale400"
+          ],
+          "block": 1,
+          "gpu": "H100-06, NVIDIA H100 80GB HBM3\n"
+        }
+      ]
+    },
+    {
+      "study": "control",
+      "timed_requests": 720,
+      "native_requests": 144,
+      "failed_requests": [],
+      "capped_requests": [
+        [
+          0,
+          "small400",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          0,
+          "scale400",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          0,
+          "general-draft",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          1,
+          "general-draft",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          1,
+          "scale400",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          1,
+          "small400",
+          "strand-79b49549d834719fa4ad"
+        ]
+      ],
+      "fresh_rust_capped_requests": [],
+      "sessions": [
+        {
+          "arms": [
+            "small400",
+            "scale400",
+            "general-draft"
+          ],
+          "block": 0,
+          "gpu": "H100-01, NVIDIA H100 80GB HBM3\n"
+        },
+        {
+          "arms": [
+            "general-draft",
+            "scale400",
+            "small400"
+          ],
+          "block": 1,
+          "gpu": "H100-02, NVIDIA H100 80GB HBM3\n"
+        }
+      ]
+    },
+    {
+      "study": "mixed",
+      "timed_requests": 720,
+      "native_requests": 144,
+      "failed_requests": [],
+      "capped_requests": [
+        [
+          0,
+          "mixed400",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          0,
+          "scale400",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          0,
+          "general-draft",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          1,
+          "general-draft",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          1,
+          "scale400",
+          "strand-79b49549d834719fa4ad"
+        ],
+        [
+          1,
+          "mixed400",
+          "strand-79b49549d834719fa4ad"
+        ]
+      ],
+      "fresh_rust_capped_requests": [],
+      "sessions": [
+        {
+          "arms": [
+            "mixed400",
+            "scale400",
+            "general-draft"
+          ],
+          "block": 0,
+          "gpu": "H100-07, NVIDIA H100 80GB HBM3\n"
+        },
+        {
+          "arms": [
+            "general-draft",
+            "scale400",
+            "mixed400"
+          ],
+          "block": 1,
+          "gpu": "H100-08, NVIDIA H100 80GB HBM3\n"
+        }
+      ]
+    }
+  ],
+  "timed_requests": 3120,
+  "native_requests": 480,
+  "unique_prompts": 120,
+  "prompts_identical_across_all_saved_timed_outputs": 120,
+  "differing_prompt_ids": [],
+  "prompts_with_identical_completion_token_counts": 120,
+  "timed_observations_per_prompt": {
+    "phase2-prose-7": 26,
+    "phase2-tool_calls-3": 26,
+    "strand-1fb23429e4851df6af98": 26,
+    "Python/131": 26,
+    "Python/100": 26,
+    "strand-e9ca69b11f9bce228ba6": 26,
+    "phase2-tool_calls-7": 26,
+    "strand-168edf34e66f38bd77c8": 26,
+    "strand-ad994e9a30854a400c88": 26,
+    "strand-305c99c6815fef5e974f": 26,
+    "Python/109": 26,
+    "strand-c94c9e141ac72b9fc066": 26,
+    "Python/121": 26,
+    "Python/153": 26,
+    "strand-42f92287f95ba798bd7f": 26,
+    "Python/144": 26,
+    "Python/122": 26,
+    "phase2-reasoning-4": 26,
+    "Python/148": 26,
+    "strand-4fa31daddd2a75201795": 26,
+    "phase2-tool_calls-2": 26,
+    "strand-6c1e56de47d012541800": 26,
+    "strand-88ede464b7efdb62530e": 26,
+    "phase2-tool_calls-5": 26,
+    "strand-6064516300841eae5101": 26,
+    "Python/13": 26,
+    "strand-64951efa70c99907a379": 26,
+    "strand-83dd5daf9091da059274": 26,
+    "Python/42": 26,
+    "Python/18": 26,
+    "strand-4065801867200d988658": 26,
+    "strand-b783f21424f78c5def46": 26,
+    "strand-948c5f4d4c19076c8764": 26,
+    "Python/56": 26,
+    "strand-89194079579bd029bd86": 26,
+    "strand-594e1780a4e653e13820": 26,
+    "strand-d159d0442241fd98b9d5": 26,
+    "strand-79b49549d834719fa4ad": 26,
+    "strand-f7de3b0e9de5b39c19d2": 26,
+    "strand-f1309e219528f52cbfb3": 26,
+    "strand-42507c305642e766facc": 26,
+    "Python/154": 26,
+    "phase2-tool_calls-6": 26,
+    "strand-0354085854cd13df89cf": 26,
+    "phase2-prose-1": 26,
+    "strand-c88c01578d0dcc75510f": 26,
+    "strand-dce4b9444c438c18a9d2": 26,
+    "strand-ba7bebbf7043f37931ee": 26,
+    "strand-09a5bd2fac97261d05ea": 26,
+    "phase2-tool_calls-0": 26,
+    "strand-4fc99577d80e415a2de6": 26,
+    "strand-1d5fa506e5de35a04284": 26,
+    "Python/135": 26,
+    "strand-e4a20d7718918676576c": 26,
+    "strand-720694a9edf6a149bf66": 26,
+    "Python/6": 26,
+    "strand-e3ff0c3e1eec425907b3": 26,
+    "phase2-reasoning-3": 26,
+    "strand-5bbd1b584d243d423eca": 26,
+    "phase2-reasoning-2": 26,
+    "strand-82b4e62f677e63086f8f": 26,
+    "Python/52": 26,
+    "strand-da3206fd49d4862b2919": 26,
+    "strand-74934cc96b16f472eaaf": 26,
+    "strand-be509b9a2fc74d9865fa": 26,
+    "Python/76": 26,
+    "strand-88ee20f08c11f80a7a14": 26,
+    "Python/81": 26,
+    "Python/119": 26,
+    "strand-5253539b0ee776869a00": 26,
+    "strand-9fa31643beaf1a546ec8": 26,
+    "phase2-prose-6": 26,
+    "phase2-reasoning-6": 26,
+    "Python/34": 26,
+    "strand-9473c050e3826abebc62": 26,
+    "phase2-prose-4": 26,
+    "phase2-reasoning-1": 26,
+    "Python/9": 26,
+    "strand-cb37b0f1578511e3d88f": 26,
+    "Python/72": 26,
+    "Python/84": 26,
+    "strand-9ac62c94836619c5029f": 26,
+    "strand-4fa6fda5099c8eff2b16": 26,
+    "phase2-reasoning-5": 26,
+    "phase2-prose-0": 26,
+    "strand-5a5072d35a284eae5deb": 26,
+    "Python/32": 26,
+    "phase2-tool_calls-1": 26,
+    "strand-48c6f3db3090f3c7defc": 26,
+    "phase2-prose-2": 26,
+    "Python/88": 26,
+    "strand-c65b5cbef1b46aaeec3c": 26,
+    "phase2-reasoning-0": 26,
+    "Python/43": 26,
+    "phase2-prose-3": 26,
+    "strand-0248ccd71eb670863a21": 26,
+    "Python/50": 26,
+    "strand-f79374d8a1290f44162f": 26,
+    "strand-f4a5903dbf1f09224f79": 26,
+    "strand-58747c9d43dfdd01ad8c": 26,
+    "strand-d424f256aff23473a0aa": 26,
+    "strand-244ba14a89279eb4fefc": 26,
+    "Python/44": 26,
+    "strand-338aea8460ddb0f69b3b": 26,
+    "phase2-reasoning-7": 26,
+    "strand-8d61f375bd72fc20522d": 26,
+    "strand-2b68e7cf8e7d5ea66848": 26,
+    "Python/156": 26,
+    "Python/77": 26,
+    "strand-a7927a750fb9e7e1d520": 26,
+    "strand-9d3c146795e981103156": 26,
+    "strand-846d3937ab6f74f66205": 26,
+    "phase2-prose-5": 26,
+    "Python/114": 26,
+    "strand-dc40eddcc24bdc3550b3": 26,
+    "Python/101": 26,
+    "strand-e182c88a4c1721f68cd3": 26,
+    "strand-4981445ee505f18376e4": 26,
+    "phase2-tool_calls-4": 26,
+    "strand-efaa64a1b1b3f0a42ad3": 26
+  },
+  "note": "Exact greedy text equality on these finite tests is not a proof of sampled-distribution equivalence."
+}

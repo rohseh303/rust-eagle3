@@ -1,0 +1,53 @@
+[
+  {
+    "requests": 32,
+    "successes": 32,
+    "failures": 0,
+    "truncated": 0,
+    "wall_s": 7.556388577000007,
+    "output_tokens_per_s": 284.9244686215927,
+    "median_latency_s": 0.2011528680000083,
+    "p95_latency_s": 0.45128980055000195,
+    "median_ttft_s": 0.02372466250000116,
+    "p95_ttft_s": 0.03006966974998875,
+    "median_tpot_s": 0.003160627919490298,
+    "acceptance_rate": null,
+    "accepted_draft_tokens": null,
+    "proposed_draft_tokens": null,
+    "acceptance_note": "Ratio of summed per-request accepted/proposed draft counters when available; otherwise unavailable. Bonus tokens excluded."
+  },
+  {
+    "requests": 32,
+    "successes": 32,
+    "failures": 0,
+    "truncated": 0,
+    "wall_s": 7.592664105999972,
+    "output_tokens_per_s": 283.56318282256535,
+    "median_latency_s": 0.2016289099999824,
+    "p95_latency_s": 0.451108154650008,
+    "median_ttft_s": 0.025447936499986668,
+    "p95_ttft_s": 0.031416293099989896,
+    "median_tpot_s": 0.003125841587388635,
+    "acceptance_rate": null,
+    "accepted_draft_tokens": null,
+    "proposed_draft_tokens": null,
+    "acceptance_note": "Ratio of summed per-request accepted/proposed draft counters when available; otherwise unavailable. Bonus tokens excluded."
+  },
+  {
+    "requests": 32,
+    "successes": 32,
+    "failures": 0,
+    "truncated": 0,
+    "wall_s": 7.547329027000018,
+    "output_tokens_per_s": 285.266481996187,
+    "median_latency_s": 0.20113104150000538,
+    "p95_latency_s": 0.44973975984999154,
+    "median_ttft_s": 0.0234781520000098,
+    "p95_ttft_s": 0.028248209450001126,
+    "median_tpot_s": 0.003145801351042242,
+    "acceptance_rate": null,
+    "accepted_draft_tokens": null,
+    "proposed_draft_tokens": null,
+    "acceptance_note": "Ratio of summed per-request accepted/proposed draft counters when available; otherwise unavailable. Bonus tokens excluded."
+  }
+]

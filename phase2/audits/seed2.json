@@ -1,0 +1,94 @@
+{
+  "config": {
+    "model": {
+      "target_model_path": "/data/models/target",
+      "draft_model_config": "/data/models/general-draft/config.json",
+      "draft_checkpoint_path": "/data/models/general-draft",
+      "vocab_mapping_path": "/data/baseline-vocab.pt",
+      "torch_dtype": "bfloat16"
+    },
+    "data": {
+      "hidden_states_path": "/data/features/train",
+      "eval_hidden_states_path": "/data/features/validation",
+      "max_length": 3072,
+      "chat_template": "qwen3-instruct",
+      "cache_dir": "/data/cache"
+    },
+    "training": {
+      "strategy": "eagle3",
+      "batch_size": 1,
+      "accumulation_steps": 8,
+      "learning_rate": 1e-05,
+      "num_epochs": 3,
+      "max_steps": 100,
+      "total_steps": 100,
+      "max_grad_norm": 0.5,
+      "ttt_length": 7,
+      "attention_backend": "sdpa",
+      "save_interval": 25,
+      "eval_interval": 25,
+      "log_interval": 5,
+      "seed": 20260919
+    },
+    "tracking": {
+      "report_to": "none"
+    },
+    "run_id": "seed2",
+    "output_dir": "/data/phase2/seed2/training",
+    "deployment": {
+      "mode": "local_colocated",
+      "trainer": {
+        "nnodes": 1,
+        "nproc_per_node": 1
+      }
+    }
+  },
+  "selected_checkpoint": "/data/phase2/seed2/training/seed2-step100",
+  "vocab_unchanged": {
+    "t2d": true,
+    "d2t": true
+  },
+  "metadata": {
+    "seed2.best_meta.json": {
+      "run_id": "seed2",
+      "step": 100,
+      "score": 1.5577226292220474,
+      "metric": "eval/simulated_acc_len",
+      "metrics": {
+        "eval/avg_loss": 1.8898932088420062,
+        "eval/avg_acc": 0.650462368353455,
+        "eval/per_position_acc": [
+          0.650462368353455,
+          0.6071153352170563,
+          0.5922810172103776,
+          0.5793090161828923,
+          0.5660801438479321,
+          0.5580529154893399,
+          0.5479707166709479
+        ],
+        "eval/simulated_acc_len": 1.5577226292220474,
+        "eval/acceptance_rate_0": 0.7723339729938609,
+        "eval/expected_acceptance_0": 0.7723339729938609,
+        "eval/acceptance_rate_1": 0.7204354336220128,
+        "eval/expected_acceptance_1": 0.7204354336220128,
+        "eval/acceptance_rate_2": 0.6930208930397656,
+        "eval/expected_acceptance_2": 0.6930208930397656,
+        "eval/acceptance_rate_3": 0.6723685917616891,
+        "eval/expected_acceptance_3": 0.6723685917616891,
+        "eval/acceptance_rate_4": 0.6508986602157454,
+        "eval/expected_acceptance_4": 0.6508986602157454,
+        "eval/acceptance_rate_5": 0.6310270348449682,
+        "eval/expected_acceptance_5": 0.6310270348449682,
+        "eval/acceptance_rate_6": 0.6100834920042522,
+        "eval/expected_acceptance_6": 0.6100834920042522,
+        "eval/ploss_0": 0.3403182738609595,
+        "eval/ploss_1": 0.4503233806882558,
+        "eval/ploss_2": 0.4999206240098656,
+        "eval/ploss_3": 0.5379829924911113,
+        "eval/ploss_4": 0.5696383517617568,
+        "eval/ploss_5": 0.5994349026675079,
+        "eval/ploss_6": 0.6262703810998068
+      }
+    }
+  }
+}

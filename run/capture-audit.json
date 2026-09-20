@@ -1,0 +1,8 @@
+{
+  "source_log": "capture-1789791717885203590.log",
+  "capture_results": [
+    "Generation loop finished. Processed: 512, Skipped: 0",
+    "Generation loop finished. Processed: 64, Skipped: 0"
+  ],
+  "preformatted_loader_patch": "patches/specforge-preformatted-capture.patch"
+}

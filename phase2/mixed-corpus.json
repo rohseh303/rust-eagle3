@@ -1,0 +1,36 @@
+{
+  "parts_in_feature_index_order": [
+    {
+      "source": "run/regenerated/train.jsonl",
+      "first_examples_used": 512,
+      "source_file_sha256": "dcd25d71d2b6872e2a0f9c634d8fa8d3aaa314782626465e623da276b9eafa83",
+      "teacher_prompt_tokens": 101284,
+      "teacher_answer_tokens": 108939,
+      "capped": 5
+    },
+    {
+      "source": "phase2/regenerated/extra-rust/train.jsonl",
+      "first_examples_used": 1024,
+      "source_file_sha256": "e361e99150ea7955f82c46025211ac08448acd74d8a459ca7c6633127a0129d9",
+      "teacher_prompt_tokens": 199918,
+      "teacher_answer_tokens": 217360,
+      "capped": 15
+    },
+    {
+      "source": "phase2/regenerated/general/train.jsonl",
+      "first_examples_used": 512,
+      "source_file_sha256": "cb2b27cb79fd9186edef81c6a1808fec8ebb241ce992eafe61635f7b70fea666",
+      "teacher_prompt_tokens": 58719,
+      "teacher_answer_tokens": 222021,
+      "capped": 46
+    }
+  ],
+  "total_examples": 2048,
+  "general_example_fraction": 0.25,
+  "general_teacher_answer_token_fraction": 0.4049113656259119,
+  "total_teacher_answer_tokens": 548320,
+  "total_teacher_prompt_tokens": 359921,
+  "total_capped_prefixes": 66,
+  "combined_text_sha256": "6fccdcf912c70b06fe1c3e1e103e8699f029dd63ebfaa9c47d190e694dc6134f",
+  "note": "Reconstructed after capture from the same numeric feature-index order: original Rust 512, extra Rust first 1024, general 512. Distinct corpus tokens, not repeated training exposure or exact loss-mask tokens."
+}

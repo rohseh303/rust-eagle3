@@ -1,0 +1,149 @@
+{
+  "config": {
+    "model": {
+      "target_model_path": "/data/models/target",
+      "draft_model_config": "/data/models/general-draft/config.json",
+      "draft_checkpoint_path": "/data/models/general-draft",
+      "vocab_mapping_path": "/data/baseline-vocab.pt",
+      "torch_dtype": "bfloat16"
+    },
+    "data": {
+      "hidden_states_path": "/data/phase2/features/rust2048",
+      "eval_hidden_states_path": "/data/features/validation",
+      "max_length": 3072,
+      "chat_template": "qwen3-instruct",
+      "cache_dir": "/data/cache"
+    },
+    "training": {
+      "strategy": "eagle3",
+      "batch_size": 1,
+      "accumulation_steps": 8,
+      "learning_rate": 1e-05,
+      "num_epochs": 3,
+      "max_steps": 100,
+      "total_steps": 100,
+      "max_grad_norm": 0.5,
+      "ttt_length": 7,
+      "attention_backend": "sdpa",
+      "save_interval": 25,
+      "eval_interval": 25,
+      "log_interval": 5,
+      "seed": 20260918
+    },
+    "tracking": {
+      "report_to": "none"
+    },
+    "run_id": "scale100",
+    "output_dir": "/data/phase2/scale100/training",
+    "deployment": {
+      "mode": "local_colocated",
+      "trainer": {
+        "nnodes": 1,
+        "nproc_per_node": 1
+      }
+    }
+  },
+  "stage_configs": {
+    "train.json": {
+      "model": {
+        "target_model_path": "/data/models/target",
+        "draft_model_config": "/data/models/general-draft/config.json",
+        "draft_checkpoint_path": "/data/models/general-draft",
+        "vocab_mapping_path": "/data/baseline-vocab.pt",
+        "torch_dtype": "bfloat16"
+      },
+      "data": {
+        "hidden_states_path": "/data/phase2/features/rust2048",
+        "eval_hidden_states_path": "/data/features/validation",
+        "max_length": 3072,
+        "chat_template": "qwen3-instruct",
+        "cache_dir": "/data/cache"
+      },
+      "training": {
+        "strategy": "eagle3",
+        "batch_size": 1,
+        "accumulation_steps": 8,
+        "learning_rate": 1e-05,
+        "num_epochs": 3,
+        "max_steps": 100,
+        "total_steps": 100,
+        "max_grad_norm": 0.5,
+        "ttt_length": 7,
+        "attention_backend": "sdpa",
+        "save_interval": 25,
+        "eval_interval": 25,
+        "log_interval": 5,
+        "seed": 20260918
+      },
+      "tracking": {
+        "report_to": "none"
+      },
+      "run_id": "scale100",
+      "output_dir": "/data/phase2/scale100/training",
+      "deployment": {
+        "mode": "local_colocated",
+        "trainer": {
+          "nnodes": 1,
+          "nproc_per_node": 1
+        }
+      }
+    }
+  },
+  "selected_checkpoint": "/data/phase2/scale100/training/scale100-step100",
+  "vocab_unchanged": {
+    "t2d": true,
+    "d2t": true
+  },
+  "metadata": {
+    "scale100.best_meta.json": {
+      "run_id": "scale100",
+      "step": 100,
+      "score": 1.5685424710172575,
+      "metric": "eval/simulated_acc_len",
+      "metrics": {
+        "eval/avg_loss": 1.8624289437327781,
+        "eval/avg_acc": 0.6507192396609299,
+        "eval/per_position_acc": [
+          0.6507192396609299,
+          0.6103262265604932,
+          0.5958772155150269,
+          0.5817492936039045,
+          0.5689699460570254,
+          0.5598510146416645,
+          0.5509247367069099
+        ],
+        "eval/simulated_acc_len": 1.5685424710172575,
+        "eval/acceptance_rate_0": 0.7736135789321376,
+        "eval/expected_acceptance_0": 0.7736135789321376,
+        "eval/acceptance_rate_1": 0.7223497258231055,
+        "eval/expected_acceptance_1": 0.7223497258231055,
+        "eval/acceptance_rate_2": 0.6956835591686658,
+        "eval/expected_acceptance_2": 0.6956835591686658,
+        "eval/acceptance_rate_3": 0.6745193552944393,
+        "eval/expected_acceptance_3": 0.6745193552944393,
+        "eval/acceptance_rate_4": 0.6529875606149953,
+        "eval/expected_acceptance_4": 0.6529875606149953,
+        "eval/acceptance_rate_5": 0.632651060530117,
+        "eval/expected_acceptance_5": 0.632651060530117,
+        "eval/acceptance_rate_6": 0.6114976250948425,
+        "eval/expected_acceptance_6": 0.6114976250948425,
+        "eval/ploss_0": 0.3383005472172455,
+        "eval/ploss_1": 0.4421577378848413,
+        "eval/ploss_2": 0.49172222647031677,
+        "eval/ploss_3": 0.5280038533273528,
+        "eval/ploss_4": 0.5609408784245754,
+        "eval/ploss_5": 0.5910123965868571,
+        "eval/ploss_6": 0.6177431896836902
+      }
+    }
+  },
+  "exposure_by_optimizer_step": {
+    "100": {
+      "example_exposures": 800,
+      "unique_examples_seen": 800,
+      "teacher_prompt_token_exposures": 157276,
+      "teacher_completion_token_exposures": 173209,
+      "note": "Reconstructed from pinned SpecForge sampler, not an optimizer FLOP count; teacher usage tokens are not identical to the multi-step loss-mask count."
+    }
+  }
+}

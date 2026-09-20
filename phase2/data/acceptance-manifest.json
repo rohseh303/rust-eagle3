@@ -1,0 +1,8 @@
+{
+  "counts": {
+    "rust_fresh": 16,
+    "tool_calls": 8
+  },
+  "sha256": "3b1f5665532ba92bb36a59ad8515a5032f45b98a3269c57bf8671bf69593b353",
+  "purpose": "Separate native counters after each scaling/mixed timed pass; excluded from latency measurements."
+}

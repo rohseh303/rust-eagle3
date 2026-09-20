@@ -1,0 +1,9 @@
+{
+  "target": {"repo": "Qwen/Qwen3-8B", "revision": "b968826d9c46dd6066d109eabc6255188de91218"},
+  "baseline_draft": {"repo": "Tengyunw/qwen3_8b_eagle3", "revision": "2a1059d51f622b8cad7d7d72840153ffea5488a0"},
+  "training_data": {"repo": "Fortytwo-Network/Strandset-Rust-v1", "revision": "0a8d223302712a2b34a6ad4ce1fd679031894b3d", "file": "data/train-00000-of-00001.parquet"},
+  "evaluation_data": {"repo": "bigcode/humanevalpack", "revision": "9a41762f73a8cb23bb5811b73d5aab164efcf378"},
+  "specforge": {"repo": "https://github.com/sgl-project/SpecForge.git", "revision": "ed64d275bac8a48e126adb2827368603566a3029"},
+  "sglang": "0.5.18",
+  "seed": 20260918
+}

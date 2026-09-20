@@ -1,0 +1,50 @@
+[
+  {
+    "variant": "pilot",
+    "asset": "rust-eagle3-pilot-v0.1.0.tar",
+    "bytes": 799559680,
+    "sha256": "998cd146a5b73e30db167c0a719b3f970d34ead05b6fd9b62cf563eb79e04583",
+    "weight_sha256": "61636b05aa2a373b055bc363ca1baf531c9138004f199437e583e30d39f77d1a",
+    "status": "prepared locally; not uploaded"
+  },
+  {
+    "variant": "seed2",
+    "asset": "rust-eagle3-seed2-v0.1.0.tar",
+    "bytes": 799559680,
+    "sha256": "d5e80dccbd47c3c5ade81057583a5af8ab30a99bf302abde6e907f9802f475da",
+    "weight_sha256": "3ff6c074aa384d4541f7640c44ca41e709a78bdcfb5f15f5830cf4a7ee65f650",
+    "status": "prepared locally; not uploaded"
+  },
+  {
+    "variant": "scale100",
+    "asset": "rust-eagle3-scale100-v0.1.0.tar",
+    "bytes": 799559680,
+    "sha256": "4fb7e72f0ba4d50141441a829e6d52dea28ec4d26ff915945ce0e7a9077945a5",
+    "weight_sha256": "4d976e42202c4a696e68ff777ebd1ddaa71d5adea926286c8e6ce37d6cced34e",
+    "status": "prepared locally; not uploaded"
+  },
+  {
+    "variant": "small400",
+    "asset": "rust-eagle3-small400-v0.1.0.tar",
+    "bytes": 799559680,
+    "sha256": "95c0dc32911f2167bd85093bcf7d599b2cbf12e5bc2adcace0d12d09daf43cf5",
+    "weight_sha256": "dc70b9f3f000c8ca7cc45431a1d7cb0d4fd9a68625d7ec117285ae05b60cf650",
+    "status": "prepared locally; not uploaded"
+  },
+  {
+    "variant": "scale400",
+    "asset": "rust-eagle3-scale400-v0.1.0.tar",
+    "bytes": 799559680,
+    "sha256": "525baa65bd801dd9b8067aea6032f1df33cf63f0fef614af48c2d4ca8ebf081a",
+    "weight_sha256": "8084d09ddbd72c6874c81793534090e5a58ad69c7eefb22a8c5e7ddca4fd6b36",
+    "status": "prepared locally; not uploaded"
+  },
+  {
+    "variant": "mixed400",
+    "asset": "rust-eagle3-mixed400-v0.1.0.tar",
+    "bytes": 799559680,
+    "sha256": "51995f5365080d446d4f62ddbdcb39d459377a20cf93fb27e5ee0d8134f994e2",
+    "weight_sha256": "c0222c70bfc4471aaaa5c7b7f61dfb867b2191291c2e3a4b1c139a6be0a5084c",
+    "status": "prepared locally; not uploaded"
+  }
+]

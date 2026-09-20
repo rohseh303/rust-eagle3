@@ -1,0 +1,41 @@
+{
+  "run_id": "rust-eagle3-pilot",
+  "step": 100,
+  "score": 1.566891355953303,
+  "metric": "eval/simulated_acc_len",
+  "metrics": {
+    "eval/avg_loss": 1.885758621992123,
+    "eval/avg_acc": 0.6528384279475983,
+    "eval/per_position_acc": [
+      0.6528384279475983,
+      0.6093629591574621,
+      0.5911893141536091,
+      0.5806575905471358,
+      0.5670434112509632,
+      0.5588235294117647,
+      0.5495761623426664
+    ],
+    "eval/simulated_acc_len": 1.566891355953303,
+    "eval/acceptance_rate_0": 0.7726489598530486,
+    "eval/expected_acceptance_0": 0.7726489598530486,
+    "eval/acceptance_rate_1": 0.7203596936941498,
+    "eval/expected_acceptance_1": 0.7203596936941498,
+    "eval/acceptance_rate_2": 0.6930671468145827,
+    "eval/expected_acceptance_2": 0.6930671468145827,
+    "eval/acceptance_rate_3": 0.6724055232649427,
+    "eval/expected_acceptance_3": 0.6724055232649427,
+    "eval/acceptance_rate_4": 0.6507626502534055,
+    "eval/expected_acceptance_4": 0.6507626502534055,
+    "eval/acceptance_rate_5": 0.6311743390766545,
+    "eval/expected_acceptance_5": 0.6311743390766545,
+    "eval/acceptance_rate_6": 0.6103101770617259,
+    "eval/expected_acceptance_6": 0.6103101770617259,
+    "eval/ploss_0": 0.3396541330739431,
+    "eval/ploss_1": 0.4484370563087247,
+    "eval/ploss_2": 0.4996615001452321,
+    "eval/ploss_3": 0.5369774071409501,
+    "eval/ploss_4": 0.5689746141748864,
+    "eval/ploss_5": 0.5979898099732082,
+    "eval/ploss_6": 0.624228525739479
+  }
+}

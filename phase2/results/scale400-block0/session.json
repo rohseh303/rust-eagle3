@@ -1,0 +1,10 @@
+{
+  "arms": [
+    "scale400",
+    "scale100",
+    "rust-draft",
+    "general-draft"
+  ],
+  "block": 0,
+  "gpu": "H100-05, NVIDIA H100 80GB HBM3\n"
+}

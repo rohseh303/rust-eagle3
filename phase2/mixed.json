@@ -1,0 +1,920 @@
+{
+  "group": "mixed400",
+  "sessions": [
+    {
+      "arms": [
+        "mixed400",
+        "scale400",
+        "general-draft"
+      ],
+      "block": 0,
+      "gpu": "H100-07, NVIDIA H100 80GB HBM3\n"
+    },
+    {
+      "arms": [
+        "general-draft",
+        "scale400",
+        "mixed400"
+      ],
+      "block": 1,
+      "gpu": "H100-08, NVIDIA H100 80GB HBM3\n"
+    }
+  ],
+  "requests": 720,
+  "failures": 0,
+  "capped_requests": 6,
+  "comparisons": [
+    {
+      "baseline": "general-draft",
+      "candidate": "mixed400",
+      "cohort": "prose",
+      "paired_prompts": 8,
+      "median_paired_latency_reduction": 0.07187798022841119,
+      "bootstrap_95pct_interval": [
+        0.03255836954064967,
+        0.08734194576831011
+      ],
+      "prompts_with_all_outputs_identical": 8,
+      "median_reduction_on_identical_outputs": 0.07187798022841119,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": 0.07098057370867672,
+          "bootstrap_95pct_interval": [
+            0.03120497500460201,
+            0.08713339982789747
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": 0.07098057370867672,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": 0.07274192094584014,
+          "bootstrap_95pct_interval": [
+            0.03386071363789955,
+            0.0875418435994883
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": 0.07274192094584014,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ]
+    },
+    {
+      "baseline": "general-draft",
+      "candidate": "mixed400",
+      "cohort": "python",
+      "paired_prompts": 32,
+      "median_paired_latency_reduction": 0.01316275729541383,
+      "bootstrap_95pct_interval": [
+        -0.0013706697980362392,
+        0.05387867814712782
+      ],
+      "prompts_with_all_outputs_identical": 32,
+      "median_reduction_on_identical_outputs": 0.01316275729541383,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": 0.009011752880915547,
+          "bootstrap_95pct_interval": [
+            -0.0028578971920902863,
+            0.053297897375651215
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": 0.009011752880915547,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": 0.01465762784329444,
+          "bootstrap_95pct_interval": [
+            -0.0009043626263498528,
+            0.0544382051148774
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": 0.01465762784329444,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ]
+    },
+    {
+      "baseline": "general-draft",
+      "candidate": "mixed400",
+      "cohort": "reasoning",
+      "paired_prompts": 8,
+      "median_paired_latency_reduction": 0.013933352448815994,
+      "bootstrap_95pct_interval": [
+        -0.0175843812195684,
+        0.03503158581643928
+      ],
+      "prompts_with_all_outputs_identical": 8,
+      "median_reduction_on_identical_outputs": 0.013933352448815994,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": 0.012439573876105114,
+          "bootstrap_95pct_interval": [
+            -0.016990414644786345,
+            0.035382717366884975
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": 0.012439573876105114,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": 0.01537180515286396,
+          "bootstrap_95pct_interval": [
+            -0.018158772378120025,
+            0.03554294585157147
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": 0.01537180515286396,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ]
+    },
+    {
+      "baseline": "general-draft",
+      "candidate": "mixed400",
+      "cohort": "rust_fresh",
+      "paired_prompts": 32,
+      "median_paired_latency_reduction": 0.15052111139177204,
+      "bootstrap_95pct_interval": [
+        0.1367362962611724,
+        0.15628569663919578
+      ],
+      "prompts_with_all_outputs_identical": 32,
+      "median_reduction_on_identical_outputs": 0.15052111139177204,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": 0.150537437437464,
+          "bootstrap_95pct_interval": [
+            0.1370200364449956,
+            0.15642547020528097
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": 0.150537437437464,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": 0.15108681421060888,
+          "bootstrap_95pct_interval": [
+            0.13637270175382632,
+            0.1561503522847515
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": 0.15108681421060888,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ],
+      "distinct_crates": 24,
+      "crate_bootstrap_95pct_interval": [
+        0.14291666330285913,
+        0.15522610286920052
+      ],
+      "crate_analysis_note": "Supplementary sensitivity analysis, added after replication; primary predeclared gate still uses prompt bootstrap."
+    },
+    {
+      "baseline": "general-draft",
+      "candidate": "mixed400",
+      "cohort": "rust_seen",
+      "paired_prompts": 32,
+      "median_paired_latency_reduction": 0.13354778664149458,
+      "bootstrap_95pct_interval": [
+        0.11200663976066005,
+        0.1506155904129245
+      ],
+      "prompts_with_all_outputs_identical": 32,
+      "median_reduction_on_identical_outputs": 0.13354778664149458,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": 0.13485266793488804,
+          "bootstrap_95pct_interval": [
+            0.11212943385594398,
+            0.1507911956917103
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": 0.13485266793488804,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": 0.1339303743697875,
+          "bootstrap_95pct_interval": [
+            0.11452517386120786,
+            0.15134800312533153
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": 0.1339303743697875,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ],
+      "distinct_crates": 27,
+      "crate_bootstrap_95pct_interval": [
+        0.11069596819468774,
+        0.15146579887861517
+      ],
+      "crate_analysis_note": "Supplementary sensitivity analysis, added after replication; primary predeclared gate still uses prompt bootstrap."
+    },
+    {
+      "baseline": "general-draft",
+      "candidate": "mixed400",
+      "cohort": "tool_calls",
+      "paired_prompts": 8,
+      "median_paired_latency_reduction": -0.02393881109867335,
+      "bootstrap_95pct_interval": [
+        -0.06564129144907915,
+        0.012276490643509441
+      ],
+      "prompts_with_all_outputs_identical": 8,
+      "median_reduction_on_identical_outputs": -0.02393881109867335,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": -0.030488150917562407,
+          "bootstrap_95pct_interval": [
+            -0.065583569356505,
+            0.002082009964475273
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": -0.030488150917562407,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": -0.022216237459206867,
+          "bootstrap_95pct_interval": [
+            -0.06569574195550176,
+            0.022554625929408267
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": -0.022216237459206867,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ]
+    },
+    {
+      "baseline": "general-draft",
+      "candidate": "scale400",
+      "cohort": "prose",
+      "paired_prompts": 8,
+      "median_paired_latency_reduction": 0.018531108335033797,
+      "bootstrap_95pct_interval": [
+        -0.015276702273814058,
+        0.029796161160287937
+      ],
+      "prompts_with_all_outputs_identical": 8,
+      "median_reduction_on_identical_outputs": 0.018531108335033797,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": 0.016774072126200912,
+          "bootstrap_95pct_interval": [
+            -0.017640177205798357,
+            0.02687771574608333
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": 0.016774072126200912,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": 0.020353285042232883,
+          "bootstrap_95pct_interval": [
+            -0.013006463111413957,
+            0.03260177778879925
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": 0.020353285042232883,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ]
+    },
+    {
+      "baseline": "general-draft",
+      "candidate": "scale400",
+      "cohort": "python",
+      "paired_prompts": 32,
+      "median_paired_latency_reduction": 0.007186872239348829,
+      "bootstrap_95pct_interval": [
+        -0.015581282509463223,
+        0.040273042623324096
+      ],
+      "prompts_with_all_outputs_identical": 32,
+      "median_reduction_on_identical_outputs": 0.007186872239348829,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": 0.0011108876776549925,
+          "bootstrap_95pct_interval": [
+            -0.02090949038286971,
+            0.040326193669885824
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": 0.0011108876776549925,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": 0.013861920491660962,
+          "bootstrap_95pct_interval": [
+            -0.011426443677467979,
+            0.03935207562662252
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": 0.013861920491660962,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ]
+    },
+    {
+      "baseline": "general-draft",
+      "candidate": "scale400",
+      "cohort": "reasoning",
+      "paired_prompts": 8,
+      "median_paired_latency_reduction": -0.009067758510611146,
+      "bootstrap_95pct_interval": [
+        -0.023976281782041253,
+        0.013349423255675896
+      ],
+      "prompts_with_all_outputs_identical": 8,
+      "median_reduction_on_identical_outputs": -0.009067758510611146,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": -0.010320201050571631,
+          "bootstrap_95pct_interval": [
+            -0.024415267761000115,
+            0.011395498727524433
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": -0.010320201050571631,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": -0.007859004928258972,
+          "bootstrap_95pct_interval": [
+            -0.023551763508206536,
+            0.015230155055883765
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": -0.007859004928258972,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ]
+    },
+    {
+      "baseline": "general-draft",
+      "candidate": "scale400",
+      "cohort": "rust_fresh",
+      "paired_prompts": 32,
+      "median_paired_latency_reduction": 0.15705451383586394,
+      "bootstrap_95pct_interval": [
+        0.14603955736100838,
+        0.1732896209341952
+      ],
+      "prompts_with_all_outputs_identical": 32,
+      "median_reduction_on_identical_outputs": 0.15705451383586394,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": 0.15586553732488312,
+          "bootstrap_95pct_interval": [
+            0.14477002094098057,
+            0.17142165400064097
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": 0.15586553732488312,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": 0.15724649522164041,
+          "bootstrap_95pct_interval": [
+            0.14650953166562775,
+            0.17325227173743285
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": 0.15724649522164041,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ],
+      "distinct_crates": 24,
+      "crate_bootstrap_95pct_interval": [
+        0.14603955736100838,
+        0.17083077453807916
+      ],
+      "crate_analysis_note": "Supplementary sensitivity analysis, added after replication; primary predeclared gate still uses prompt bootstrap."
+    },
+    {
+      "baseline": "general-draft",
+      "candidate": "scale400",
+      "cohort": "rust_seen",
+      "paired_prompts": 32,
+      "median_paired_latency_reduction": 0.1461703753166388,
+      "bootstrap_95pct_interval": [
+        0.12318962216718099,
+        0.1524306227122048
+      ],
+      "prompts_with_all_outputs_identical": 32,
+      "median_reduction_on_identical_outputs": 0.1461703753166388,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": 0.14260834309780124,
+          "bootstrap_95pct_interval": [
+            0.11986957551191835,
+            0.15232161042819248
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": 0.14260834309780124,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": 0.14693638358630606,
+          "bootstrap_95pct_interval": [
+            0.1228345965256854,
+            0.15435120862297125
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": 0.14693638358630606,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ],
+      "distinct_crates": 27,
+      "crate_bootstrap_95pct_interval": [
+        0.12137878934843471,
+        0.1538998999936539
+      ],
+      "crate_analysis_note": "Supplementary sensitivity analysis, added after replication; primary predeclared gate still uses prompt bootstrap."
+    },
+    {
+      "baseline": "general-draft",
+      "candidate": "scale400",
+      "cohort": "tool_calls",
+      "paired_prompts": 8,
+      "median_paired_latency_reduction": -0.05284247814322607,
+      "bootstrap_95pct_interval": [
+        -0.1333915605114011,
+        0.010073489618039666
+      ],
+      "prompts_with_all_outputs_identical": 8,
+      "median_reduction_on_identical_outputs": -0.05284247814322607,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": -0.055145527787267,
+          "bootstrap_95pct_interval": [
+            -0.1372263602769096,
+            -0.0031501716662769574
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": -0.055145527787267,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": -0.050653630723803356,
+          "bootstrap_95pct_interval": [
+            -0.12625080634765795,
+            0.02252450617774937
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": -0.050653630723803356,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ]
+    },
+    {
+      "baseline": "scale400",
+      "candidate": "mixed400",
+      "cohort": "prose",
+      "paired_prompts": 8,
+      "median_paired_latency_reduction": 0.04021840164436241,
+      "bootstrap_95pct_interval": [
+        0.01429253853684248,
+        0.06977709908037066
+      ],
+      "prompts_with_all_outputs_identical": 8,
+      "median_reduction_on_identical_outputs": 0.04021840164436241,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": 0.04058722474726573,
+          "bootstrap_95pct_interval": [
+            0.014678127459735124,
+            0.07134800916208539
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": 0.04058722474726573,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": 0.03986221616053698,
+          "bootstrap_95pct_interval": [
+            0.013920070202581125,
+            0.06825891291467212
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": 0.03986221616053698,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ]
+    },
+    {
+      "baseline": "scale400",
+      "candidate": "mixed400",
+      "cohort": "python",
+      "paired_prompts": 32,
+      "median_paired_latency_reduction": -0.00025158663280200333,
+      "bootstrap_95pct_interval": [
+        -0.0012949430703640408,
+        0.011965402986107598
+      ],
+      "prompts_with_all_outputs_identical": 32,
+      "median_reduction_on_identical_outputs": -0.00025158663280200333,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": 0.0012645307145674467,
+          "bootstrap_95pct_interval": [
+            -0.0005359528588916862,
+            0.011052155830885813
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": 0.0012645307145674467,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": -0.0005776666143766374,
+          "bootstrap_95pct_interval": [
+            -0.0030207777888471288,
+            0.012848108591790308
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": -0.0005776666143766374,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ]
+    },
+    {
+      "baseline": "scale400",
+      "candidate": "mixed400",
+      "cohort": "reasoning",
+      "paired_prompts": 8,
+      "median_paired_latency_reduction": 0.005504922462971462,
+      "bootstrap_95pct_interval": [
+        -0.0007284484718304007,
+        0.045580342628743775
+      ],
+      "prompts_with_all_outputs_identical": 8,
+      "median_reduction_on_identical_outputs": 0.005504922462971462,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": 0.0065705072295410005,
+          "bootstrap_95pct_interval": [
+            -0.0009303586221685034,
+            0.046286840218737746
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": 0.0065705072295410005,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": 0.004473711201433972,
+          "bootstrap_95pct_interval": [
+            -0.0009405438451154935,
+            0.04489665176284485
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": 0.004473711201433972,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ]
+    },
+    {
+      "baseline": "scale400",
+      "candidate": "mixed400",
+      "cohort": "rust_fresh",
+      "paired_prompts": 32,
+      "median_paired_latency_reduction": -0.014436068936058644,
+      "bootstrap_95pct_interval": [
+        -0.017435530782612396,
+        -0.002019411768217072
+      ],
+      "prompts_with_all_outputs_identical": 32,
+      "median_reduction_on_identical_outputs": -0.014436068936058644,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": -0.013686208653308607,
+          "bootstrap_95pct_interval": [
+            -0.01652165355095625,
+            -0.0009184004249709332
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": -0.013686208653308607,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": -0.015000708165411547,
+          "bootstrap_95pct_interval": [
+            -0.01834323870876564,
+            -0.00339034277210426
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": -0.015000708165411547,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ],
+      "distinct_crates": 24,
+      "crate_bootstrap_95pct_interval": [
+        -0.01824501601939743,
+        -0.0019361902820205223
+      ],
+      "crate_analysis_note": "Supplementary sensitivity analysis, added after replication; primary predeclared gate still uses prompt bootstrap."
+    },
+    {
+      "baseline": "scale400",
+      "candidate": "mixed400",
+      "cohort": "rust_seen",
+      "paired_prompts": 32,
+      "median_paired_latency_reduction": -0.011698282363994617,
+      "bootstrap_95pct_interval": [
+        -0.017912616687995486,
+        -0.0011453999478985288
+      ],
+      "prompts_with_all_outputs_identical": 32,
+      "median_reduction_on_identical_outputs": -0.011698282363994617,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": -0.01054194498385208,
+          "bootstrap_95pct_interval": [
+            -0.016805112033408065,
+            -0.000564711694576614
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": -0.01054194498385208,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 32,
+          "median_paired_latency_reduction": -0.012817982560331953,
+          "bootstrap_95pct_interval": [
+            -0.01913549370660317,
+            -0.0020046784550915575
+          ],
+          "prompts_with_all_outputs_identical": 32,
+          "median_reduction_on_identical_outputs": -0.012817982560331953,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ],
+      "distinct_crates": 27,
+      "crate_bootstrap_95pct_interval": [
+        -0.017308913010753768,
+        -0.0011453999478985288
+      ],
+      "crate_analysis_note": "Supplementary sensitivity analysis, added after replication; primary predeclared gate still uses prompt bootstrap."
+    },
+    {
+      "baseline": "scale400",
+      "candidate": "mixed400",
+      "cohort": "tool_calls",
+      "paired_prompts": 8,
+      "median_paired_latency_reduction": 0.0004046991468444894,
+      "bootstrap_95pct_interval": [
+        -0.00232260973207965,
+        0.05596211586868938
+      ],
+      "prompts_with_all_outputs_identical": 8,
+      "median_reduction_on_identical_outputs": 0.0004046991468444894,
+      "missing_from_baseline": [],
+      "missing_from_candidate": [],
+      "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim.",
+      "by_session": [
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": 0.003223932201289803,
+          "bootstrap_95pct_interval": [
+            -0.0031038808802472673,
+            0.05710788139407352
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": 0.003223932201289803,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        },
+        {
+          "paired_prompts": 8,
+          "median_paired_latency_reduction": -0.0019326286031940976,
+          "bootstrap_95pct_interval": [
+            -0.004649836686284825,
+            0.054864248728037635
+          ],
+          "prompts_with_all_outputs_identical": 8,
+          "median_reduction_on_identical_outputs": -0.0019326286031940976,
+          "missing_from_baseline": [],
+          "missing_from_candidate": [],
+          "note": "Positive reduction is faster. Exact equality across all repeats; no sampled-distribution claim."
+        }
+      ]
+    }
+  ],
+  "limitation": "Prompt-bootstrap intervals condition on two sessions and available seeds; not independent training-corpus replications. Small diagnostic cohorts do not prove absence of regression.",
+  "native_acceptance": [
+    {
+      "arm": "general-draft",
+      "cohort": "rust_fresh",
+      "requests": 32,
+      "accepted": 2640,
+      "proposed": 8040,
+      "acceptance_rate": 0.3283582089552239,
+      "verification_steps": 2680,
+      "completion_tokens": 5288
+    },
+    {
+      "arm": "general-draft",
+      "cohort": "tool_calls",
+      "requests": 16,
+      "accepted": 382,
+      "proposed": 594,
+      "acceptance_rate": 0.6430976430976431,
+      "verification_steps": 198,
+      "completion_tokens": 564
+    },
+    {
+      "arm": "mixed400",
+      "cohort": "rust_fresh",
+      "requests": 32,
+      "accepted": 3042,
+      "proposed": 6768,
+      "acceptance_rate": 0.449468085106383,
+      "verification_steps": 2256,
+      "completion_tokens": 5288
+    },
+    {
+      "arm": "mixed400",
+      "cohort": "tool_calls",
+      "requests": 16,
+      "accepted": 366,
+      "proposed": 624,
+      "acceptance_rate": 0.5865384615384616,
+      "verification_steps": 208,
+      "completion_tokens": 564
+    },
+    {
+      "arm": "scale400",
+      "cohort": "rust_fresh",
+      "requests": 32,
+      "accepted": 3056,
+      "proposed": 6726,
+      "acceptance_rate": 0.4543562295569432,
+      "verification_steps": 2242,
+      "completion_tokens": 5288
+    },
+    {
+      "arm": "scale400",
+      "cohort": "tool_calls",
+      "requests": 16,
+      "accepted": 364,
+      "proposed": 642,
+      "acceptance_rate": 0.5669781931464174,
+      "verification_steps": 214,
+      "completion_tokens": 564
+    }
+  ],
+  "native_prompts_with_all_outputs_identical": 24
+}
