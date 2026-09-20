@@ -1,5 +1,7 @@
 # Rust EAGLE-3: a controlled draft-adaptation experiment
 
+**Hugging Face:** [Rust specialist (`scale400`)](https://huggingface.co/RSRS64/qwen3-8b-eagle3-rust) · [Rust/prose mixture (`mixed400`)](https://huggingface.co/RSRS64/qwen3-8b-eagle3-rust-mixed). Both require the pinned Qwen3-8B target; each page includes direct weight downloads and serving instructions. All six experimental checkpoints remain available in the GitHub release.
+
 An existing EAGLE-3 draft adapted for **frozen Qwen3-8B** achieved **15.63% lower paired latency than the upstream draft** on 32 fresh Rust prompts in the matched-control study (exploratory 95% interval: 14.26–17.11%). H100 80GB, BF16, greedy generation, one request at a time.
 
 **[Read the full write-up →](WRITEUP.md)** · [Reproduce the analysis](REPRODUCE.md) · [Browse artifacts](ARTIFACTS.md) · [Model cards](models/README.md) · [Download weights](https://github.com/rohseh303/rust-eagle3/releases/tag/v0.1.0)

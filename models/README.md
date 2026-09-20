@@ -1,5 +1,7 @@
 # Checkpoints
 
+**Hugging Face:** [Rust specialist (`scale400`)](https://huggingface.co/RSRS64/qwen3-8b-eagle3-rust) · [Rust/prose mixture (`mixed400`)](https://huggingface.co/RSRS64/qwen3-8b-eagle3-rust-mixed). Both require the pinned Qwen3-8B target; each page includes direct weight downloads and serving instructions. All six experimental checkpoints remain available in the GitHub release.
+
 [Download all six checkpoint bundles from the v0.1.0 release](https://github.com/rohseh303/rust-eagle3/releases/tag/v0.1.0). Model binaries are distributed as release assets and excluded from Git history. Each tar contains the model, configuration, model card, checksums, and notices. Extract it into a new directory and use it with the pinned target; it is not a standalone model.
 
 | Variant | Purpose |

@@ -1,5 +1,7 @@
 # Artifact index
 
+**Hugging Face:** [Rust specialist (`scale400`)](https://huggingface.co/RSRS64/qwen3-8b-eagle3-rust) · [Rust/prose mixture (`mixed400`)](https://huggingface.co/RSRS64/qwen3-8b-eagle3-rust-mixed). Both require the pinned Qwen3-8B target; each page includes direct weight downloads and serving instructions. All six experimental checkpoints remain available in the GitHub release.
+
 | Artifact | Where | What it supports |
 |---|---|---|
 | Full report | [WRITEUP.md](WRITEUP.md) | Methods, results, counterexamples, limits |
